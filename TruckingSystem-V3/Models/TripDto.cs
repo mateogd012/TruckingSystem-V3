@@ -6,7 +6,8 @@ namespace TruckingSystem_V3.Models
     {
         public int Id { get; set; }
         public string SourceAndDestiny { get; set; }
-        public string? Description { get; set; }
+        public string Description { get; set; }
+        public TripStatus TripStatus { get; set; }
 
     }
 }

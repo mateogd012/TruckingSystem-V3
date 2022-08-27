@@ -20,6 +20,7 @@ namespace TruckingSystem_V3.Entities
 
         [ForeignKey("TruckerId")]
         public Trucker? Trucker { get; set; }
+        public TripStatus TripStatus { get; set; }
         public int TruckerId { get; set; }
         public Trip(string sourceAndDestiny)
             {

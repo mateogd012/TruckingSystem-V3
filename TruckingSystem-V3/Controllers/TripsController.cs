@@ -23,11 +23,6 @@ namespace TruckingSystem_V3.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<TripDto>> GetTrips(int idTrucker)
         {
-            var nameAndLastNameTrucker = User.Claims.FirstOrDefault(c => c.Type == "trucker")?.Value;
-
-            if (!_repository.NameAndLastNameAgreesWithIdTrucker(nameAndLastNameTrucker, idTrucker))
-                return Forbid();
-
             if (!_repository.ExistsTrucker(idTrucker))
                 return NotFound();
 

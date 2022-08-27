@@ -46,12 +46,14 @@ namespace TruckingSystem_V3.DBContexts
                 {
                     Id = 1,
                     Description = "400 Km de distancia.",
+                    TripStatus = TripStatus.Pending,
                     TruckerId = truckers[0].Id
                 },
                 new Trip("Galvez a Funes")
                 {
                     Id = 2,
                     Description = "50 Km de distancia.",
+                    TripStatus = TripStatus.Pending,
                     TruckerId = truckers[0].Id
                 },
 
@@ -59,24 +61,28 @@ namespace TruckingSystem_V3.DBContexts
                 {
                     Id = 3,
                     Description = "350 Km de distacnia.",
+                    TripStatus = TripStatus.Pending,
                     TruckerId = truckers[1].Id
                 },
                 new Trip("Funes a Rosario")
                 {
                     Id = 4,
                     Description = "70 Km de distancia.",
+                    TripStatus = TripStatus.Pending,
                     TruckerId = truckers[1].Id
                 },
                 new Trip("Capitan Bermudez a Rosario")
                 {
                     Id = 5,
                     Description = "30 Km de distancia.",
+                    TripStatus = TripStatus.Pending,
                     TruckerId = truckers[2].Id
                 },
                 new Trip("Funes a Buenos Aires")
                 {
                     Id = 6,
                     Description = "300 Km de distancia.",
+                    TripStatus = TripStatus.Pending,
                     TruckerId = truckers[2].Id
                 });
 
